@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #77ffaa;
+}
+.contenedor-titulo{
+	text-align: center;
+}
+.h1-main, .h2-main{
+	margin: 5px;
+}
+.h1-main{
+	font-size: 3em;
+	font-style: italic;
+}
+.contenedor-integrantes{
+	text-align: center;
+	display: inline-block;
+	width: 60%;
+}
+.contenedor-jugador{
+	display: inline-block;
+	width: 300px;
+	max-height: 280px;
+	margin: 1.25em .5em;
+}
+.h2-jugador-nombre{
+	font-size: 2.25em;
+	margin-bottom: .25em;
+}
+.h3-jugador-rol{
+	font-size: 1.5em;
+	margin: .25em;
+}
+.img-jugador{
+	width: 300px;
+	height: 280px;
+}
