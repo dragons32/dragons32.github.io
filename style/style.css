@@ -1,0 +1,113 @@
+body{
+	background-color: #ffffff;
+}
+header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.menu-1{
+	max-width: 15%;
+	min-width: 10%;
+}
+.menu-1 ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+.menu-1 li{
+	list-style: none;
+	margin: auto;
+	max-width: 33%;
+	min-width: 45px;
+}
+.menu-1 img{
+	width: 100%;
+}
+.menu-2{
+	max-width: 15%;
+	min-width: 10%;
+}
+.menu-2 ul{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	padding: 0;
+	margin: 0;
+}
+.menu-2 li{
+	list-style: none;
+	max-width: 33%;
+	min-width: 45px;
+}
+.menu-2 img{
+	width: 100%;
+}
+.titulo {
+	min-width: 70%;
+	font-size: 150%;
+	text-align: center;
+}
+.titulo h1{
+	padding: 1% 5%;
+	margin: 0;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+}
+.contenedor-descripcion{
+	width: 100%;
+	text-align: center;
+}
+.contenedor-descripcion h2{
+	font-size: 200%;
+	padding: 1% 0;
+}
+.contenedor-descripcion p{
+	font-size: 150%;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	padding: 1% 0;
+}
+.contenedor-equipo{
+	width: 100%;
+	padding: 0 0 1% 0;
+	border-style: solid;
+	border-width: 0 0 1px 0;
+	justify-content: center;
+	text-align: center;
+}
+.contenedor-equipo h2{
+	font-size: 200%;
+	margin: 0 0;
+	padding: 0 0;
+}
+.contenedor-equipo p{
+	font-size: 150%;
+}
+.contenedor-integrantes{
+	display: flex;
+	min-width: 100%;
+	justify-content: center;
+	margin: 1%;
+}
+.contenedor-integrantes img{
+	max-width: 25%;
+	min-width: 50px;
+	border-radius: 5%;
+}
+.integrante-descripcion{
+	width: 40%;
+	padding: 1% 2.5%;
+}
+.integrante-descripcion h3{
+	font-size: 150%;
+	margin: 0;
+	padding: 0 0;
+}
+.integrante-descripcion p{
+	font-size: 125%;
+	margin: 0;
+	padding: 0;
+}
