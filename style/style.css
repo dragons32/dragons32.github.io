@@ -1,113 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+	box-sizing: border-box;
+}
+:root{
+	--font: 'Roboto Mono', monospace;
+}
 body{
-	background-color: #ffffff;
+	margin: 0;
+	background-color: #626262;
 }
 header{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	border-style: double;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	padding: 3px 0 0 0;
+	border-width: 5px;
+	border-color: #cfcfcf;
+	background-color: #525252;
 }
-.menu-1{
-	max-width: 15%;
-	min-width: 10%;
+header img{
+	width: 50%;
+	min-width: 60px;
+	height: auto;
+	border-radius: 10px;
 }
-.menu-1 ul{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	padding: 0;
-	margin: 0;
-}
-.menu-1 li{
+header ul{
 	list-style: none;
-	margin: auto;
-	max-width: 33%;
-	min-width: 45px;
+	display: inline;
 }
-.menu-1 img{
-	width: 100%;
+header li{
+	display: inline;
 }
-.menu-2{
-	max-width: 15%;
-	min-width: 10%;
+header a{
+	text-decoration: none;
+	font-family: var(--font);
+	font-size: 18px;
+	color: #eaeaea;
 }
-.menu-2 ul{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row-reverse;
-	padding: 0;
-	margin: 0;
+.contenedor_inline{
+	display: inline-block;
 }
-.menu-2 li{
-	list-style: none;
-	max-width: 33%;
-	min-width: 45px;
+.col-1{
+	grid-column: span 1;
+	align-self: center;
 }
-.menu-2 img{
-	width: 100%;
+.col-2{
+	grid-column: span 2;
+	align-self: center;
 }
-.titulo {
-	min-width: 70%;
-	font-size: 150%;
+.col-3{
+	grid-column: span 3;
+	align-self: center;
+}
+.col-4{
+	grid-column: span 4;
+	align-self: center;
+}
+.col-8{
+	grid-column: span 8;
+	align-self: center;
+}
+.row-1{
+	grid-row: span 1;
+}
+.text-derecha{
+	text-align: right;
+}
+.text-izquierda{
+	text-align: left;
+	padding-left: 4%;
+}
+.text-centro{
 	text-align: center;
 }
-.titulo h1{
-	padding: 1% 5%;
-	margin: 0;
-	border-style: solid;
-	border-width: 0 0 1px 0;
+.text-inicio{
+	align-self: start;
 }
-.contenedor-descripcion{
+.margin-a-li a{
+	margin: auto 1%;
+}
+.cuerpo{
+	padding: 1%;
+}
+.cuerpo h1, h2, h3, h4{
+	color: #eaeaea;
+}
+footer{
+	background-color: #929292;
+	border-color: #afafaf;
+	border-style: solid;
+	border-width: 2px;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+footer h3{
+	font-style: italic;
+	color: #323232;
+}
+footer img{
+	width: 15%;
+	margin: 1% 5%;
+}
+.contenedor-col-6{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.contenedor-col-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.cotenedor-row-5{
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+}
+.borde-double{
+	border-style: double;
+}
+.borde-double-redondo{
+	border-style: double;
+	border-radius: 10px;
+}
+.borde-bot{
+	border: solid 2px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+.margin-sin_top{
+	margin-top: 0;
+}
+.margin-right{
+	margin: 0 1% 0 0;
+}
+/* Ejemplo para limitar/cortar imagen
+.contenedor-jugador img{
+	position: relative;
+	z-index: 0;
+	object-fit: cover;
 	width: 100%;
-	text-align: center;
-}
-.contenedor-descripcion h2{
-	font-size: 200%;
-	padding: 1% 0;
-}
-.contenedor-descripcion p{
-	font-size: 150%;
-	border-style: solid;
-	border-width: 0 0 1px 0;
-	padding: 1% 0;
-}
-.contenedor-equipo{
-	width: 100%;
-	padding: 0 0 1% 0;
-	border-style: solid;
-	border-width: 0 0 1px 0;
-	justify-content: center;
-	text-align: center;
-}
-.contenedor-equipo h2{
-	font-size: 200%;
-	margin: 0 0;
-	padding: 0 0;
-}
-.contenedor-equipo p{
-	font-size: 150%;
-}
-.contenedor-integrantes{
-	display: flex;
-	min-width: 100%;
-	justify-content: center;
-	margin: 1%;
-}
-.contenedor-integrantes img{
-	max-width: 25%;
-	min-width: 50px;
-	border-radius: 5%;
-}
-.integrante-descripcion{
-	width: 40%;
-	padding: 1% 2.5%;
-}
-.integrante-descripcion h3{
-	font-size: 150%;
-	margin: 0;
-	padding: 0 0;
-}
-.integrante-descripcion p{
-	font-size: 125%;
-	margin: 0;
-	padding: 0;
-}
+	height: 90vh;
+}*/
